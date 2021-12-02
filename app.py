@@ -16,13 +16,13 @@ def home():
                     request.form.get("account"),
                 )
             )
-        return render_template("form.html")
+        return render_template("index.html")
         
             
 
 @app.route("/transactions")
 def show_transactions():
-    return render_template("transactions.html",entries=transaction)
+    return render_template("index(2).html",entries=transaction)
 
 
 
